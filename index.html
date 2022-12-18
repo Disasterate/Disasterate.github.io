@@ -5,12 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="public/imgs/favicon.png" type="images/png">
+    <link rel="stylesheet" href="public/css/style.css">
     <title>Disasterate</title>
 </head>
 
 <body>
-    <h1>Disasterate</h1>
+    <main class="main">
+        <div class="selection-board">
+            <div class="character-row">
+                <div class="character-item"></div>
+                <div class="character-item"></div>
+                <div class="character-item"></div>
+            </div>
+            <div class="col">
+                <div class="row left">
+                    <div class="character-row">
+                        <div class="character-item"></div>
+                        <div class="character-item"></div>
+                    </div>
+                    <div class="character-row">
+                        <div class="character-item"></div>
+                    </div>
+                </div>
+                <div class="character-row">
+                    <div class="character-item random"></div>
+                </div>
+                <div class="row right">
+                    <div class="character-row">
+                        <div class="character-item"></div>
+                        <div class="character-item"></div>
+                    </div>
+                    <div class="character-row">
+                        <div class="character-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/public/js/jquery-3.6.2.min.js"></script>
+    <script>
+        $('.character-item').hover(function () {
+            $(this).addClass('active');
+        }, function () {
+            $(this).removeClass('active');
+        });
+        document.querySelector('.chara')
+    </script>
 </body>
 
 </html>
